@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="abc.css">
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <div class="left"><a href="am.html">Aman's official</a></div>
+        <div class="right">
+            <ul>
+                <li><a href="rejestration.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>Services</li>
+                <li><a href="Calculator.html">project</a></li>
+                <li><a href="contacts.html">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<center><h1 style="background-color: green"><marquee direction="right" scrollamount="10"><b>*</b>Aman's Calculator<b>*</b></marquee></h1></center>
+<div class="cantainer">
+    <div class="calculator">
+        <form>
+            <div class="display">
+                <input type="button" name="display">
+            </div>
+            <div id="id1">
+                <h2><center style="color: gold">A<b style="color: red">pp</b>le</center></h2>
+                <input type="button" value="AC" onclick="display.value =''" class="abs" >
+                <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="abs">
+                <input type="button" value="." onclick="display.value +='.'" class="abs">
+                <input type="button" value="/" onclick="display.value +='/'" class="abs">
+            </div>
+            <div id="id2">
+                <input type="button" value="7" onclick="display.value +='7'">
+                <input type="button" value="8" onclick="display.value +='8'">
+                <input type="button" value="9" onclick="display.value +='9'">
+                <input type="button" value="*" onclick="display.value +='*'" class="abs">
+            </div>
+            <div id="id3">
+                <input type="button" value="4" onclick="display.value +='4'">
+                <input type="button" value="5" onclick="display.value +='5'">
+                <input type="button" value="6" onclick="display.value +='6'">
+                <input type="button" value="-" onclick="display.value +='-'" class="abs">
+            </div>
+            <div id="id4">
+                <input type="button" value="1" onclick="display.value +='1'">
+                <input type="button" value="2" onclick="display.value +='2'">
+                <input type="button" value="3" onclick="display.value +='3'">
+                <input type="button" value="+" onclick="display.value +='+'" class="abs">
+            </div>
+            <div id="5">
+                <input type="button" value="00" onclick="display.value +='00'">
+                <input type="button" value="0" onclick="display.value +='0'">
+                <input type="button" value="=" class="equal abs" onclick="display.value= eval(display.value)">
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
